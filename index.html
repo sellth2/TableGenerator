@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Generator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <h2>Liste</h2>
+    <form>
+        <div class="input-row">
+            <label for="name">First Name:</label>
+            <input type="text" name="name" id="name" class="input" />
+        </div>
+        <div class="input-row">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" class="input"  />
+        </div>
+        <div class="input-row">
+            <label for="pnumber">Phone Number:</label>
+            <input type="text" name="pnumber" id="pnumber" class="input" />
+        </div>
+        <button id="clear-form"class=button-clear>Clear</button>
+        <button id="create-new-table" class="button-create-table">Create New Table</button>
+        <button id="delete-all" class="button-delete-all">Delete All the Tables</button>
+
+    </form>
+    <table class="table-class">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th><button class="addBtn" onclick="addDefaultRow()">Add To This Table</button></th>
+                <th onclick="onDeleteDefaultTable()"><button class="dltTableBtn">Delete This Table</button></th>
+            </tr>
+        </thead>
+        <tbody id="entry"></tbody>
+    </table>
+
+
+
+
+    <script src="scripts\main.js"></script>
+</body>
+
+</html>
